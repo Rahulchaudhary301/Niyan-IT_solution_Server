@@ -16,13 +16,14 @@ router.get('/bg',(req,res)=>{
 
 // Set up Multer storage
 const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        cb(null, 'uploads/') // save files to the 'uploads' directory
-    },
+    // destination: function (req, file, cb) {
+    //     cb(null, 'uploads/') // save files to the 'uploads' directory
+    // },
     filename: function (req, file, cb) {
         cb(null, file.originalname) // use the original filename
     }
 });
+
 const upload = multer({ storage: storage });
 
 

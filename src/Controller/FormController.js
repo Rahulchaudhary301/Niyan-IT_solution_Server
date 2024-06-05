@@ -90,7 +90,7 @@ const CareerData = async (req, res) => {
             }
         });
 
-        const recipients = ['rahulchaudhary301@gmail.com','sheetalpandey555@gmail.com', 'niyanitsolutions@gmail.com'];
+        const recipients = ['rahulchaudhary301@gmail.com','niyanitsolutions@gmail.com'];
 
         const info = await transporter.sendMail({
             from: 'your-email@example.com', // replace with your email
