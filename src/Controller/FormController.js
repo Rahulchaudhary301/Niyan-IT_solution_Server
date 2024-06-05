@@ -15,7 +15,7 @@ const FormData = async (req, res) => {
     try {
         const { name, email, contactNumber, services, message } = req.body;
 
-        console.log("Rahul bbbbbbbbbbb")
+       
 
         const transporter = nodemailer.createTransport({
             // host: 'smtp.ethereal.email',
@@ -72,7 +72,6 @@ const CareerData = async (req, res) => {
         const { firstName, lastName, email, position, message } = req.body;
         const file = req.file;
         const pdfPath = req.file.path;
-
 
         // if (!pdfPath) {
         //     return res.status(400).send('No file uploaded.');
